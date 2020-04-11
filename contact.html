@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato - Alura Barber Shop</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="box">
+                <h1>
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="Logo da Alura Barber Shop">
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contatos.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="name-lastname">Nome e Sobrenome</label>
+                <input type="text" id="name-lastname" class="input-default" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-default" required placeholder="seuemail@dominio.com">
+
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" class="input-default" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="message">Mensagem</label>
+                <textarea cols="30" rows="10" id="message" class="input-default" required></textarea>
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contact" value="email" id="radio-email"> Email</label>
+                    
+
+                    <label for="radio-phone"><input type="radio" name="contact" value="phone" id="radio-phone"> Telefone</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contact" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label><input type="checkbox" class="checkbox" checked> Gostaria de receber as nossas novidades por e-mail?</label>
+
+                <input type="submit" class="submit">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th> Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+        <footer>
+            <img src="./images/logo-branco.png" alt="Logo da Alura Barber Shop">
+            <p class="copyright">&copy; Copyright Alura Barber Shop 2019</p>
+        </footer>
+    </body>
+</html>
+
+
